@@ -92,7 +92,7 @@ class ArrayManyToManyField(ArrayField, RelatedField):
             'symmetrical': self.remote_field.symmetrical,
             'related_query_name': self.remote_field.related_query_name,
             'limit_choices_to': self.remote_field.limit_choices_to,
-            'to_field': self.remote_field.field,
+            'to_field': self.remote_field.field_name,
             'db_constraint': self.db_constraint
         })
         return name, path, args, kwargs
